@@ -12,7 +12,7 @@ async fn main() {
     dotenv().unwrap();
     
     println!(r#"
-    _            _      _   _            _   _ _    _        _           _                       
+     _            _      _   _            _   _ _    _        _           _                       
     (_)          | |    | | | |          | | (_) |  | |      | |         (_)                      
      _  __ _  ___| | __ | |_| |__   ___  | |_ _| | _| |_ ___ | | __  _ __ _ _ __  _ __   ___ _ __ 
     | |/ _` |/ __| |/ / | __| '_ \ / _ \ | __| | |/ / __/ _ \| |/ / | '__| | '_ \| '_ \ / _ \ '__|
@@ -25,7 +25,7 @@ async fn main() {
 
 
     let env_vars: HashMap<String, String> = env::vars().collect();
-    let tiktok_cookie = env_vars.get("COOKIE2").unwrap();
+    let tiktok_cookie = env_vars.get("COOKIE").unwrap();
 
     let mut min_cursor = 0;
     let mut followers = vec![];
